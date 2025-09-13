@@ -1,6 +1,5 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
-// Fix: Aligned with Gemini API coding guidelines.
 // The API key must be sourced directly from the environment variable `process.env.API_KEY`.
 // The '!' non-null assertion is used because the guidelines state to assume the key is always available.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
@@ -36,9 +35,8 @@ export const generateNotificationMessage = async ({
 הקפידי על טון חם ואישי.`;
 
   try {
-    // Fix: Removed conditional logic for API key existence to adhere to guidelines.
-    // The API call will now proceed directly, with the expectation that the key is configured.
-    const response = await ai.models.generateContent({
+    // Fix: Added explicit type annotation for the API response to align with Gemini API guidelines.
+    const response: GenerateContentResponse = await ai.models.generateContent({
       model,
       contents: prompt,
     });
