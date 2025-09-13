@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    
+    <link rel="icon" href="data:,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>מערכת ניהול משלוחים - מרינה</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +29,7 @@
     <div id="root"></div>
     <!-- 1. Add Babel Standalone for in-browser TSX/JSX transpilation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- 2. Change script type to 'text/babel' to be processed by Babel -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <!-- 2. Change script type to 'text/babel' and add presets for react and typescript -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
