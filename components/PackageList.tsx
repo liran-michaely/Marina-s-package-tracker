@@ -1,6 +1,6 @@
 import React from 'react';
-import type { PackageWithCustomer } from '../types';
-import PackageListItem from './PackageListItem';
+import type { PackageWithCustomer } from '../types.ts';
+import PackageListItem from './PackageListItem.tsx';
 
 interface PackageListProps {
   packages: PackageWithCustomer[];

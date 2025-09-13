@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { PackageWithCustomer, PackageStatus, PackageUpdateData } from '../types';
-import { PACKAGE_STATUSES } from '../constants';
-import { generateNotificationMessage } from '../services/geminiService';
-import Spinner from './Spinner';
-import { CopyIcon } from './icons/CopyIcon';
-import { CheckIcon } from './icons/CheckIcon';
+import type { PackageWithCustomer, PackageStatus, PackageUpdateData } from '../types.ts';
+import { PACKAGE_STATUSES } from '../constants.ts';
+import { generateNotificationMessage } from '../services/geminiService.ts';
+import Spinner from './Spinner.tsx';
+import { CopyIcon } from './icons/CopyIcon.tsx';
+import { CheckIcon } from './icons/CheckIcon.tsx';
 
 interface UpdateStatusModalProps {
   pkg: PackageWithCustomer;

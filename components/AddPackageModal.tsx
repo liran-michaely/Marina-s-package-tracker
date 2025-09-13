@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { Package, Customer } from '../types';
+import type { Package, Customer } from '../types.ts';
 
 interface AddPackageModalProps {
   onClose: () => void;

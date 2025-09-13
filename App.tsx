@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { Package, Customer, PackageWithCustomer, PackageUpdateData } from './types';
-import { fetchPackagesWithCustomers, addPackage as addPackageService, updatePackage as updatePackageService } from './services/supabaseService';
-import Header from './components/Header';
-import PackageList from './components/PackageList';
-import AddPackageModal from './components/AddPackageModal';
-import UpdateStatusModal from './components/UpdateStatusModal';
-import Spinner from './components/Spinner';
-import { PlusIcon } from './components/icons/PlusIcon';
+import type { Package, Customer, PackageWithCustomer, PackageUpdateData } from './types.ts';
+import { fetchPackagesWithCustomers, addPackage as addPackageService, updatePackage as updatePackageService } from './services/supabaseService.ts';
+import Header from './components/Header.tsx';
+import PackageList from './components/PackageList.tsx';
+import AddPackageModal from './components/AddPackageModal.tsx';
+import UpdateStatusModal from './components/UpdateStatusModal.tsx';
+import Spinner from './components/Spinner.tsx';
+import { PlusIcon } from './components/icons/PlusIcon.tsx';
 
 const App: React.FC = () => {
   const [packages, setPackages] = useState<PackageWithCustomer[]>([]);

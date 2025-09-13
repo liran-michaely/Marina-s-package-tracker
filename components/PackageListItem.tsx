@@ -1,6 +1,6 @@
 import React from 'react';
-import type { PackageWithCustomer } from '../types';
-import { STATUS_STYLES } from '../constants';
+import type { PackageWithCustomer } from '../types.ts';
+import { STATUS_STYLES } from '../constants.ts';
 
 interface PackageListItemProps {
   pkg: PackageWithCustomer;

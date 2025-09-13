@@ -1,5 +1,5 @@
 
-import { PackageStatus } from './types';
+import { PackageStatus } from './types.ts';
 
 export const PACKAGE_STATUSES: PackageStatus[] = [
   PackageStatus.RECEIVED,

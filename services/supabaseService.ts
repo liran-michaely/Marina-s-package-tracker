@@ -1,5 +1,5 @@
-import { PackageStatus } from '../types';
-import type { Package, Customer, PackageWithCustomer, PackageUpdateData } from '../types';
+import { PackageStatus } from '../types.ts';
+import type { Package, Customer, PackageWithCustomer, PackageUpdateData } from '../types.ts';
 
 // --- MOCK DATABASE ---
 let mockCustomers: Customer[] = [
