@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
   <head>
-    <meta charset="UTF-," />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>מערכת ניהול משלוחים - מרינה</title>
@@ -27,6 +27,9 @@
 </head>
   <body class="bg-slate-50">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- 1. Add Babel Standalone for in-browser TSX/JSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- 2. Change script type to 'text/babel' to be processed by Babel -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
